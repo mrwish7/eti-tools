@@ -287,7 +287,7 @@ Métropolitain 2 | 239.0.1.12:5002
 
 #### UK ####
 
-10°E, 11221V Symbol rate 30000 FEC 5/6 in QPSK/DVB-S2 with PID 701
+10°E, 11221V Symbol rate 24760 FEC 5/6 in QPSK/DVB-S2 with PID 701
 
 Ensemble | IP-Address:Port
 -- | --
