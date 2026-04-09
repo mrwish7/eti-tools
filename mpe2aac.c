@@ -491,6 +491,13 @@ void callback(mpegts_psi_t *psi)
         len_udp -= pad_len;
     }
 
+    /* skip leading zero bytes before the AAC header */
+    while (len_udp > 0 && payload[0] == 0x00)
+    {
+        ++payload;
+        --len_udp;
+    }
+
     if (len_udp > 0)
         fwrite(payload, 1, len_udp, stdout);
 
